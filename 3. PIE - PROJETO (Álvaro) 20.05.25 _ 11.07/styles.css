@@ -1,0 +1,196 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to right, #b3e0ff, #d6b3ff);
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: nowrap; /* Garante que o conteúdo fique em uma linha */
+        }
+        .text-content {
+            max-width: 50%;
+        }
+        .text-content h1 {
+            font-size: 36px;
+            color: #222;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: #00ff00;
+            color: #000;
+            font-weight: bold;
+        }
+        .btn-secondary {
+            background: #fff;
+            color: #333;
+            border: 2px solid #000;
+        }
+        .product-img {
+            width: 100%;
+            max-width: 450px; /* Ajuste a largura da imagem para não ultrapassar */
+            margin-left: 20px; /* Espaço entre a imagem e o texto */
+        }
+        .product-img2 {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 40px;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .esports-sound {
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 300px;
+            width: 100%;
+        }
+        .esports-sound h3 {
+            color: #ccc;
+            font-size: 18px;
+        }
+        .esports-sound h1 {
+            color: #00ff00;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .esports-sound p {
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Estilos para o slider de imagens */
+        .image-slider {
+            width: 100%;
+            height: auto; /* Ajuste para que o slider se adapte ao tamanho das imagens */
+            position: relative;
+            overflow: hidden;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slider-container {
+            display: flex;
+            transition: transform 1s ease;
+        }
+        .slide {
+            width: 100%;
+            height: auto; /* Ajuste para que as imagens sejam exibidas corretamente */
+            object-fit: contain; /* Contém a imagem dentro do container */
+            max-height: 600px; /* Ajuste a altura máxima */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-content {
+                max-width: 90%;
+                text-align: center;
+            }
+            .product-img, .product-img2 {
+                max-width: 90%;
+                margin-left: 0;
+            }
+        }
+        /* Parte da apresentação dos drivers 50mm */
+            .triforce-driver {
+                box-sizing: border-box;
+                background-image: url('imagens/drive-audio.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 900px;
+                width: 1519px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+
+    .overlay-content {
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 30px;
+                text-align: center;
+                color: white;
+                border-radius: 10px;
+                max-width: 800px;
+        }
+
+    .overlay-content h1 {
+                color: #00ff00;
+                font-size: 28px;
+                margin-bottom: 15px;
+        }
+
+    .overlay-content p {
+                font-size: 16px;
+                color: #ddd;
+        }
+
+        .features-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        background-color: #000;
+        padding: 60px 20px;
+        border-top: 2px solid #00ff00;
+        border-bottom: 2px solid #00ff00;
+        }
+
+.feature {
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    }
+
+.feature img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  color: #00ff00;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.feature small {
+  display: block;
+  margin-top: 20px;
+  color: #888;
+  font-size: 12px;
+}
